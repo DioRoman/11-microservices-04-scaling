@@ -59,6 +59,8 @@ sudo sh -c "echo 'vm.overcommit_memory=1' >> /etc/sysctl.conf"
 docker compose up -d
 ```
 
+<img width="1765" height="313" alt="Снимок экрана 2025-09-01 235218" src="https://github.com/user-attachments/assets/ca99f001-25de-4e94-82fc-c13101e60207" />
+
 3. **Создайте Redis Cluster, выполнив команду из одного из контейнеров:**
 
 ```bash
@@ -76,7 +78,11 @@ docker exec -it vm1 redis-cli --cluster create \
 docker exec -it vm1 redis-cli -p 7001 cluster info
 ```
 
+<img width="1239" height="425" alt="Снимок экрана 2025-09-01 235257" src="https://github.com/user-attachments/assets/342632fe-0258-495f-ba96-c10aa7456d7d" />
+
 В поле `cluster_state` должно быть значение `ok`.
+
+<img width="1458" height="202" alt="Снимок экрана 2025-09-01 235313" src="https://github.com/user-attachments/assets/2ab2e504-9573-4968-842d-40a60e445016" />
 
 ***
 
