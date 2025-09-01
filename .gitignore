@@ -5,9 +5,9 @@ docker-compose.override.yaml
 *.tmp
 
 # Docker data folders
-data/vm1/
-data/vm2/
-data/vm3/
+data/vm1/appendonlydir/
+data/vm2/appendonlydir/
+data/vm3/appendonlydir/
 
 # Redis cluster config files
 *.rdb
